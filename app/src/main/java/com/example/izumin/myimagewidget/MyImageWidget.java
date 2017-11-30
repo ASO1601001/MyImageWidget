@@ -56,7 +56,7 @@ public class MyImageWidget extends AppWidgetProvider {
             alarmManager.setRepeating(
                     AlarmManager.RTC,
                     System.currentTimeMillis(),
-                    interval * 1000,
+                    interval * 1000 * 60,
                     PendingIntent.getBroadcast(context,0,
                             buildAlarmIntent(context,appWidgetId),
                             PendingIntent.FLAG_UPDATE_CURRENT)
